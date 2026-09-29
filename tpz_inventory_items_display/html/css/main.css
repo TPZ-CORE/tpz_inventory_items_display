@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+  background: transparent;
+
+  font-family: "Times New Roman", serif;
+}
+
+
+/* =========================================================
+   ITEM DISPLAY
+   ========================================================= */
+
+#tpz-item-display {
+
+  position: fixed;
+
+  left: 50%;
+  bottom: 10vh;
+
+  transform: translateX(-50%);
+
+  width: 12vw;
+
+  display: flex;
+  justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+
+  pointer-events: none;
+
+  transition:
+    opacity 0.25s ease,
+    visibility 0.25s ease;
+}
+
+
+/* =========================================================
+   ACTIVE
+   ========================================================= */
+
+#tpz-item-display.active {
+
+  opacity: 1;
+  visibility: visible;
+
+}
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.item-display-container {
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+
+}
+
+
+/* =========================================================
+   RECEIVED / REMOVED
+   ========================================================= */
+
+.item-display-type {
+
+  margin-bottom: 0.6vh;
+
+  font-size: 0.95vw;
+
+  font-weight: bold;
+
+  letter-spacing: 0.08vw;
+
+  text-transform: uppercase;
+
+  white-space: nowrap;
+
+  text-shadow:
+    0 0.15vh 0.25vh rgba(0, 0, 0, 0.9);
+}
+
+
+/* =========================================================
+   RECEIVED
+   ========================================================= */
+
+#tpz-item-display.add .item-display-type {
+
+  color: #ffffff;
+
+}
+
+
+/* =========================================================
+   REMOVED
+   ========================================================= */
+
+#tpz-item-display.remove .item-display-type {
+
+  color: #d0d0d0;
+
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.item-display-content {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+
+/* =========================================================
+   IMAGE CONTAINER
+   ========================================================= */
+
+.item-display-image-container {
+
+  position: relative;
+
+  width: 4.5vw;
+  height: 4.5vw;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.item-display-image {
+
+  width: 100%;
+  height: 100%;
+
+  max-width: 5vw;
+  max-height: 5vw;
+
+  object-fit: contain;
+
+  display: block;
+
+  filter:
+    drop-shadow(0 0.2vh 0.35vh rgba(0, 0, 0, 0.8));
+}
+
+
+/* =========================================================
+   QUANTITY
+   ========================================================= */
+
+.item-display-quantity {
+
+  position: absolute;
+
+  top: -0.4vh;
+  right: -0.4vw;
+
+  font-size: 0.85vw;
+
+  font-weight: bold;
+
+  line-height: 1;
+
+  white-space: nowrap;
+
+  z-index: 2;
+
+  text-shadow:
+    0 0.15vh 0.25vh rgba(0, 0, 0, 0.9);
+}
+
+
+/* =========================================================
+   ADDED QUANTITY
+   ========================================================= */
+
+#tpz-item-display.add .item-display-quantity {
+
+  color: #ffffff;
+
+}
+
+
+/* =========================================================
+   REMOVED QUANTITY
+   ========================================================= */
+
+#tpz-item-display.remove .item-display-quantity {
+
+  color: #d0d0d0;
+
+}
+
+
+/* =========================================================
+   ITEM LABEL
+   ========================================================= */
+
+.item-display-label {
+
+  max-width: 11vw;
+
+  margin-top: 0.5vh;
+
+  font-size: 0.9vw;
+
+  color: #c8c8c8;
+
+  text-align: center;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  text-shadow:
+    0 0.15vh 0.25vh rgba(0, 0, 0, 0.9);
+}
