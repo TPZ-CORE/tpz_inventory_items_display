@@ -1,8 +1,8 @@
 Config = {
 
     -- The duration to display the added item quantity in seconds.
-    ItemAddedDisplayDuration = 4,
+    ItemAddedDisplayDuration = 5,
 
     -- The duration to display the removed item quantity in seconds.
-    ItemRemovedDisplayDuration = 4,
+    ItemRemovedDisplayDuration = 5,
 }
