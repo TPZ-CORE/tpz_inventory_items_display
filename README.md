@@ -1,1 +1,1 @@
-# tpz_inventory_items_display
+tpz_inventory_items_display is a RedM client-side NUI script that displays item notifications when players receive or remove items from their inventory. It queues multiple item notifications and displays them one at a time with the item icon, name, quantity, and action type (received/removed).
