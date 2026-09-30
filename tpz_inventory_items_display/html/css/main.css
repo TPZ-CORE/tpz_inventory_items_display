@@ -205,24 +205,17 @@ body {
 
 
 /* =========================================================
-   ADDED QUANTITY
+   QUANTITY COLORS
    ========================================================= */
 
 #tpz-item-display.add .item-display-quantity {
-
-  color: #ffffff;
-
+  color: #9fda9f;
+  /* light green */
 }
 
-
-/* =========================================================
-   REMOVED QUANTITY
-   ========================================================= */
-
 #tpz-item-display.remove .item-display-quantity {
-
-  color: #d0d0d0;
-
+  color: #e58b8b;
+  /* light red */
 }
 
 
